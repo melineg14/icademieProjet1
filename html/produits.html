@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        description="Future startup, Printing3D vous présente ses produits phares d’impression 3D. Des objets du quotidien qui vont vous simplifier la vie !">
+    <meta keywords="impression, printing, 3D, impression3D, printing3D, objetsduquotidien, quotidianobjects, startup">
+    <link rel="icon" href="../assets/img/general/logo.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/produits.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <title>Printing3D - Produits</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="container">
+        <h1>NOS PRODUITS</h1>
+        <div class="choose-catagorie">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link cat-nav-link active" data-toggle="tab" role="tab" href="#kitchen"
+                        aria-controls="kitchen" aria-selected="true">Pour la cuisine</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cat-nav-link" data-toggle="tab" role="tab" href="#garden" aria-controls="garden"
+                        aria-selected="false">Jardin et plantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cat-nav-link" data-toggle="tab" role="tab" href="#diverse"
+                        aria-controls="divserse" aria-selected="false">Objets en tout genre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cat-nav-link" data-toggle="tab" role="tab" href="#bathroom"
+                        aria-controls="bathroom" aria-selected="false">Salle de bain & WC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cat-nav-link" data-toggle="tab" role="tab" href="#upcycling"
+                        aria-controls="upcycling" aria-selected="false">Surcyclage - objets
+                        recyclés / déco</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="kitchen" role="tabpanel" aria-labelledby="kitchen">
+                <div class="products-list">
+                    <h4>Produits pour la cuisine</h4>
+                    <div class="cards row" id="kitchen-cards">
+                        <div id="card" class="card col-4">
+                            <img src="" height="250px" class="card-img-top" alt="Photographie du produit">
+                            <div class="card-body">
+                                <h5 class="card-title"> </h5>
+                                <button type="button" class="btn" id="btn-description" data-toggle="modal"
+                                    data-target="#modal-window" data-description="" data-image="" data-title="">>>VOIR LE
+                                    DESCRIPTIF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="garden" role="tabpanel" aria-labelledby="garden">
+                <div class="products-list">
+                    <h4>Jardin et plantes</h4>
+                    <div class="cards row" id="garden-cards">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="diverse" role="tabpanel" aria-labelledby="diverse">
+                <div class="products-list">
+                    <h4>Produits divers du quotidien</h4>
+                    <div class="cards row" id="diverse-cards">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="bathroom" role="tabpanel" aria-labelledby="bathroom">
+                <div class="products-list">
+                    <h4>Salle de bain et WC</h4>
+                    <div class="cards row" id="bathroom-cards">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="upcycling" role="tabpanel" aria-labelledby="upcycling">
+                <div class="products-list">
+                    <h4>Surcyclage : objets recyclés malins ou déco</h4>
+                    <p>
+                        Le surcyclage ou upcycling consiste à récupérer des matériaux ou des produits devenus inutiles
+                        afin de les transformer pour leur donner une nouvelle vie.
+                    </p>
+                    <div class="cards row" id="upcycling-cards">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-window" tabindex="-1" role="dialog" aria-labelledby="FenêtreModale"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id=""></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <img class="modal-image" src="" height="175px" alt="Autre photographie du produit">
+                    <div class="modal-description">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="suggestion">
+            <h3>Suggérer un produit</h3>
+            <p>Si vous ne trouvez pas l'objet de vos rêves, n'hésitez pas à nous le suggérer !</p>
+            <form class="sugg-form">
+                <div class="form-group">
+                    <label for="product">Produit : </label>
+                    <input type="text" class="form-control" id="product">
+                </div>
+                <div class="select">
+                    <label for="select">Matériaux <span>(facultatif)</span> :</label>
+                    <select class="form-control">
+                        <option>ABS</option>
+                        <option>PLA</option>
+                        <option>ASA</option>
+                        <option>PET</option>
+                        <option>PC ou Polycarbonate</option>
+                        <option>Thermoplastiques hautes performances</option>
+                        <option>Matériaux flexibles</option>
+                        <option>Fibres de carbone</option>
+                        <option>Matériaux hybrides</option>
+                        <option>Matériaux solubles</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+                <button type="submit" id="btn-sugg" class="btn btn-warning">SUGGERER</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

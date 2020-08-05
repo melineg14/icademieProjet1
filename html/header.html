@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="../css/header.css">
+
+<nav onclick="hideDropContent()">
+  <ul>
+    <li class="header-item">
+      <img id="logo-header" src="../assets/img/general/logo.png" alt="Logo de l'entreprise Printing3D">
+    </li>
+    <li class="header-item">
+      <a class="header-link header-link-active" href="index.html">ACCUEIL</a>
+    </li>
+    <li class="header-item">
+      <a class="header-link" href="produits.html">PRODUITS</a>
+    </li>
+    <li class="header-item">
+      <div class="dropdown">
+        <button onmouseover="showDropContent()" onmouseout="hideDropContent()" class="dropbtn">AUTRE ∨</button>
+        <div onmouseover="showDropContent()" class="dropdown-content" id="dropcontent">
+          <a class="dropdown-link" href="contact.html">CONTACT</a>
+          <a class="dropdown-link" href="mentions.html">MENTIONS LEGALES</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Rechercher">
+    <button id="btn-search" type="submit">Rechercher</button>
+  </form>
+</nav>

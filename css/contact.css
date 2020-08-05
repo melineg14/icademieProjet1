@@ -1,0 +1,56 @@
+p {
+    text-align: center;
+}
+
+.contact-icone {
+    width: 25px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+input::placeholder {
+    font-family: 'roboto light italic', Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+#btn-contact {
+    margin: .5em auto 1em auto;
+    display: block;
+    background-color: #2C3E50;
+    border-radius: 0;
+    border-color: #2C3E50;
+}
+
+#btn-contact:hover {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+}
+
+.form-contact-left {
+    padding: 2em;
+    margin: auto;
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 5px;
+}
+
+.city {
+    margin-left: 1.5em;
+}
+
+.social-media {
+    margin-right: .5em;
+    width: 32px;
+   
+}
+
+.socialmedias {
+    text-align: center;
+}
+
+.invalid {
+    color: #DC3545;
+    background-color: rgb(230, 138, 147);
+    border-radius: 5px;
+}
